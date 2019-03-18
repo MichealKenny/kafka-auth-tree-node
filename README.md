@@ -17,6 +17,8 @@
 <br/>
 A simple authentication node for the [ForgeRock Identity Platform][forgerock_platform]. This node allows you to record authentication events to a Kafka topic.
 
+![ScreenShot](./kafka-node.png) 
+
 ## Installation
 
 Copy the kafka-auth-tree-node-6.5.0-jar-with-dependencies.jar file from the ../target directory into the ../web-container/webapps/openam/WEB-INF/lib directory where AM is deployed.  Restart the web container to pick up the new node.  The node will then appear in the authentication trees components palette.
@@ -27,9 +29,7 @@ The node requires you provide it a Kafka broker and topic, and a configurable ev
 ## To Build
 The code in this repository has binary dependencies that live in the ForgeRock maven repository. Maven can be configured to authenticate to this repository by following the following [ForgeRock Knowledge Base Article](https://backstage.forgerock.com/knowledge/kb/article/a74096897).
 
-Edit the necessary KafkaProducerNode.java as appropriate.  To rebuild, run "mvn clean install" in the directory containing the pom.xml  
-
-![ScreenShot](./kafka-node.png)  
+Edit the necessary KafkaProducerNode.java as appropriate.  To rebuild, run "mvn clean install" in the directory containing the pom.xml   
 
 
 ## To Do
